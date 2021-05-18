@@ -9,6 +9,7 @@
     <!ATTLIST libro 
             tipo_clase CDATA #REQUIRED
             numeroPaginas CDATA #REQUIRED>
+]>
     <!ELEMENT titulo (#PCDATA)>
     <!ELEMENT indice (#PCDATA)>
     <!ELEMENT sinopsis (#PCDATA)>
