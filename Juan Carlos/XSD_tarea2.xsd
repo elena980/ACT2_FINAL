@@ -8,7 +8,6 @@
             <xs:element name="libros">
                 <xs:complexType>
                     <xs:sequence>
-
                         <xs:element name="libro">
                             <xs:complexType>
                                 <xs:sequence>
@@ -28,60 +27,15 @@
                                 <xs:attribute name="tipo_clase" type="String"></xs:attribute>
                                 <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
                             </xs:complexType>
-                        </xs:element>
-
-                        <xs:element name="libro">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="titulo" type="String"></xs:element>
-                                    <xs:element name="indice" type="String"></xs:element>
-                                    <xs:element name="capitulo"></xs:element>
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="titulo" type="String"></xs:element>
-                                                <xs:element name="sinopsis" type="String"></xs:element>
-                                                <xs:element name="contenido" type="String"></xs:element>
-                                            </xs:sequence>
-                                            <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                        </xs:complexType>
-                                    <xs:element name="sinopsis" type="String"></xs:element>    
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>
-
-                        <xs:element name="libro">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="titulo" type="String"></xs:element>
-                                    <xs:element name="indice" type="String"></xs:element>
-                                    <xs:element name="capitulo"></xs:element>
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="titulo" type="String"></xs:element>
-                                                <xs:element name="sinopsis" type="String"></xs:element>
-                                                <xs:element name="contenido" type="String"></xs:element>
-                                            </xs:sequence>
-                                            <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                        </xs:complexType>
-                                    <xs:element name="sinopsis" type="String"></xs:element>    
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-
                         </xs:element>
                     </xs:sequence>
                     <xs:attribute name="id" type="String"></xs:attribute>
                 </xs:complexType>
             </xs:element>
 
-
             <xs:element name="Revistas">
                 <xs:complexType>
                     <xs:sequence>
-
                         <xs:element name="revista">
                             <xs:complexType>
                                 <xs:sequence>
@@ -125,183 +79,6 @@
                                 <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
                             </xs:complexType>
                         </xs:element>
-
-                        <xs:element name="revista">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="tituloRevista" type="String"></xs:element>
-                                    <xs:element name="numeroRevista" type="Integer"></xs:element>
-                                    <xs:element name="secciones">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                            </xs:sequence>
-                                        </xs:complexType>
-                                    </xs:element>
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>
-
-                        <xs:element name="revista">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="tituloRevista" type="String"></xs:element>
-                                    <xs:element name="numeroRevista" type="Integer"></xs:element>
-                                    <xs:element name="secciones">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                            </xs:sequence>
-                                        </xs:complexType>
-                                    </xs:element>
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>
-
-                        <xs:element name="revista">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="tituloRevista" type="String"></xs:element>
-                                    <xs:element name="numeroRevista" type="Integer"></xs:element>
-                                    <xs:element name="secciones">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                            </xs:sequence>
-                                        </xs:complexType>
-                                    </xs:element>
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>
-
-                        <xs:element name="revista">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="tituloRevista" type="String"></xs:element>
-                                    <xs:element name="numeroRevista" type="Integer"></xs:element>
-                                    <xs:element name="secciones">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccion">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="id" type="String"></xs:attribute>
-                                                        <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                            </xs:sequence>
-                                        </xs:complexType>
-                                    </xs:element>
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>
-
                     </xs:sequence>
                     <xs:attribute name="id" type="String"></xs:attribute>
                 </xs:complexType>
@@ -369,67 +146,7 @@
                                 <xs:attribute name="fechaPublicacion" type="date"></xs:attribute>
                             </xs:complexType>
                         </xs:element>
-
-                        <xs:element name="periodico">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="indicePeriodico" type="String"></xs:element>
-                                    <xs:element name="seccionesPeriodico">
-                                        <xs:complexType>
-                                            <xs:sequence>
-                                                <xs:element name="seccionPeriodico">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="articulo" type="String"></xs:element>
-                                                            <xs:element name="contenidoPeriodico" type="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="tipo_seccion" type="String"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                                <xs:element name="seccionPeriodico">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="articulo" type="String"></xs:element>
-                                                            <xs:element name="contenidoPeriodico" type="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="tipo_seccion" type="String"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element><xs:element name="seccionPeriodico">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="articulo" type="String"></xs:element>
-                                                            <xs:element name="contenidoPeriodico" type="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="tipo_seccion" type="String"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element><xs:element name="seccionPeriodico">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="articulo" type="String"></xs:element>
-                                                            <xs:element name="contenidoPeriodico" type="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="tipo_seccion" type="String"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element><xs:element name="seccionPeriodico">
-                                                    <xs:complexType>
-                                                        <xs:sequence>
-                                                            <xs:element name="articulo" type="String"></xs:element>
-                                                            <xs:element name="contenidoPeriodico" type="String"></xs:element>
-                                                        </xs:sequence>
-                                                        <xs:attribute name="tipo_seccion" type="String"></xs:attribute>
-                                                    </xs:complexType>
-                                                </xs:element>
-                                            </xs:sequence>
-                                            <xs:attribute name="id" type="String"></xs:attribute>
-                                        </xs:complexType>
-                                    </xs:element>
-                                </xs:sequence>
-                                <xs:attribute name="tipo_clase" type="String"></xs:attribute>
-                                <xs:attribute name="fechaPublicacion" type="date"></xs:attribute>
-                            </xs:complexType>
-                        </xs:element>        
-
-                    </xs:sequence>
+                        </xs:sequence>
                     <xs:attribute name="id" type="String"></xs:attribute>
                 </xs:complexType>
             </xs:element>
