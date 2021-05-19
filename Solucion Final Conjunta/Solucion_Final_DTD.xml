@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE biblioteca SYSTEM "Validacion_Final_DTD.dtd">
+
+<biblioteca>
+    <libros>
+        <libro libro_id="L1001" tipo_clase="novela" num_pag="297">
+            <lib_titulo>El nombre del viento</lib_titulo>
+            <capitulo cap_id="1" num_pag="20">
+                <lib_contenido link_informacion="https://www.cronicadelasesinodereyes.com/el-nombre-del-viento/"/>
+            </capitulo>
+            <capitulo cap_id="2" num_pag="25">
+                <lib_contenido link_informacion="https://www.cronicadelasesinodereyes.com/el-nombre-del-viento/"/>
+            </capitulo>
+            <lib_indice>30 Capítulos</lib_indice>
+            <sinopsis>
+                He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo.
+                 Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. 
+                 He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses,
+                  he amado a mujeres y he escrito canciones que hacen llorar a los bardos. Me llamo Kvothe. Quizá hayas oído hablar de mí.»
+            </sinopsis>
+        </libro>
+
+        <libro libro_id="L2001" tipo_clase="infantil" num_pag="125">
+            <lib_titulo>El tesoro del pirata</lib_titulo>
+            <capitulo cap_id="1" num_pag="5">
+                <lib_contenido link_informacion="https://www.amazon.es/tesoro-pirata-Aprender-MAY%C3%9ASCULA-imprenta/dp/8417210261"/>
+            </capitulo>
+            <capitulo cap_id="2" num_pag="7">
+                <lib_contenido link_informacion="https://www.amazon.es/tesoro-pirata-Aprender-MAY%C3%9ASCULA-imprenta/dp/8417210261"/>
+            </capitulo>
+            <lib_indice>5 Capítulos</lib_indice>
+            <sinopsis>
+                Pedro es el pirata de seis años más valiente y astuto de los siete mares.
+                 A pesar de que aún es muy pequeño, se hace llamar Barbanegra, ¡igual que el pirata más peligroso de la historia!
+                  Hoy está triste. ¡No encuentra su tesoro favorito!
+            </sinopsis>
+        </libro>
+        
+        <libro libro_id="L3001" tipo_clase="didactico" num_pag="186">
+            <lib_titulo>Vida salvaje</lib_titulo>
+            <capitulo cap_id="1" num_pag="23">
+                <lib_contenido link_informacion="https://www.editorialsusaeta.com/es/ciencia-e-historia-para-ninos/12186-vida-salvaje-9788467771596.html"/>
+            </capitulo>
+            <capitulo cap_id="2" num_pag="17">
+                <lib_contenido link_informacion="https://www.editorialsusaeta.com/es/ciencia-e-historia-para-ninos/12186-vida-salvaje-9788467771596.html"/>
+            </capitulo>
+            <lib_indice>15 Capítulos</lib_indice>
+            <sinopsis>
+                Cuelga en tu habitación un póster con los animales salvajes coloreado por ti mismo.
+                 Viaja por el planeta para conocer su maravillosa diversidad, desde los grandes mamíferos a los diminutos insectos
+                  y las plantas de todo el mundo.
+            </sinopsis>
+        </libro>
+    </libros>
+
+    <revistas>
+        <revista rev_id="R" tipo_clase="informatica" num_pag="50">
+            <rev_titulo>Computer Hoy</rev_titulo>
+            <num_revista>1</num_revista>
+            <rev_indice>12 Secciones</rev_indice>
+            <rev_secciones>
+                <rev_seccion secc_id="1" num_pag="5">
+                    <rev_contenido link_informacion="https://computerhoy.com/"/>
+                </rev_seccion>
+                <rev_seccion secc_id="2" num_pag="7">
+                    <rev_contenido link_informacion="https://computerhoy.com/"/>
+                </rev_seccion>
+            </rev_secciones>
+        </revista>
+
+        <revista rev_id="R" tipo_clase="corazon" num_pag="60">
+            <rev_titulo>HOLA</rev_titulo>
+            <num_revista>13</num_revista>
+            <rev_indice>6 Secciones</rev_indice>
+            <rev_secciones>
+                <rev_seccion secc_id="1" num_pag="7">
+                    <rev_contenido link_informacion="https://www.hola.com/"/>
+                </rev_seccion>
+                <rev_seccion secc_id="2" num_pag="9">
+                    <rev_contenido link_informacion="https://www.hola.com/"/>
+                </rev_seccion>
+            </rev_secciones>
+        </revista>
+
+        <revista rev_id="R" tipo_clase="coches" num_pag="55">
+            <rev_titulo>Autofacil</rev_titulo>
+            <num_revista>20</num_revista>
+            <rev_indice>7 Secciones</rev_indice>
+            <rev_secciones>
+                <rev_seccion secc_id="1" num_pag="13">
+                    <rev_contenido link_informacion="https://www.autofacil.es/"/>
+                </rev_seccion>
+                <rev_seccion secc_id="2" num_pag="16">
+                    <rev_contenido link_informacion="https://www.autofacil.es/"/>
+                </rev_seccion>
+            </rev_secciones>
+        </revista>
+
+        <revista rev_id="R" tipo_clase="investigacion" num_pag="45">
+            <rev_titulo>Investigación y Ciencia</rev_titulo>
+            <num_revista>35</num_revista>
+            <rev_indice>8 Secciones</rev_indice>
+            <rev_secciones>
+                <rev_seccion secc_id="1" num_pag="26">
+                    <rev_contenido link_informacion="https://www.investigacionyciencia.es/revistas/investigacion-y-ciencia/el-arte-de-la-transformacin-832"/>
+                </rev_seccion>
+                <rev_seccion secc_id="2" num_pag="19">
+                    <rev_contenido link_informacion="https://www.investigacionyciencia.es/revistas/investigacion-y-ciencia/el-arte-de-la-transformacin-832"/>
+                </rev_seccion>
+            </rev_secciones>
+        </revista>
+
+        <revista rev_id="R" tipo_clase="otras" num_pag="65">
+            <rev_titulo>Pasatiempos y Crucigramas</rev_titulo>
+            <num_revista>26</num_revista>
+            <rev_indice>8 Secciones</rev_indice>
+            <rev_secciones>
+                <rev_seccion secc_id="1" num_pag="19">
+                    <rev_contenido link_informacion="https://demente.com/revistas/index.php"/>
+                </rev_seccion>
+                <rev_seccion secc_id="2" num_pag="40">
+                    <rev_contenido link_informacion="https://demente.com/revistas/index.php"/>
+                </rev_seccion>
+            </rev_secciones>
+        </revista>
+    </revistas>
+
+    <periodicos>
+        <periodico period_id="P1001" tipo_clase="nacional" fecha_pub="05/12/2013">
+            <nombre>El Pais</nombre>
+            <per_secciones>
+                <per_seccion tipo_sec="economica">
+                    <articulo autor="Alberto"/>
+                </per_seccion>
+                <per_seccion tipo_sec="opinion">
+                    <articulo autor="Carlos"/>
+                </per_seccion>
+                <per_seccion tipo_sec="deportes">
+                    <articulo autor="Luis"/>
+                </per_seccion>
+                <per_seccion tipo_sec="nacional">
+                    <articulo autor="Daniel"/>
+                </per_seccion>
+                <per_seccion tipo_sec="internacional">
+                    <articulo autor="Ernesto"/>
+                </per_seccion>
+            </per_secciones>
+            <per_contenido link_informacion="https://elpais.com/"/>
+        </periodico>
+
+        <periodico period_id="P2001" tipo_clase="internacional" fecha_pub="13/12/1985">
+            <nombre>The Sun</nombre>
+            <per_secciones>
+                <per_seccion tipo_sec="economica">
+                    <articulo autor="Karl"/>
+                </per_seccion>
+                <per_seccion tipo_sec="opinion">
+                    <articulo autor="Peter"/>
+                </per_seccion>
+                <per_seccion tipo_sec="deportes">
+                    <articulo autor="Myke"/>
+                </per_seccion>
+                <per_seccion tipo_sec="nacional">
+                    <articulo autor="Stuart"/>
+                </per_seccion>
+                <per_seccion tipo_sec="internacional">
+                    <articulo autor="Michael"/>
+                </per_seccion>
+            </per_secciones>
+            <per_contenido link_informacion="https://www.thesun.co.uk/"/>
+        </periodico>
+    </periodicos>
+
+</biblioteca>
