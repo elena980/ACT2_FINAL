@@ -25,9 +25,9 @@
                                                                             <xs:attribute  name="enlace" use="required"/>
                                                                         </xs:complexType>
                                                                     </xs:element>
+                                                                </xs:sequence>
                                                                     <xs:attribute name="id" type="xs:string" use="required"/>
                                                                     <xs:attribute name="numeroPaginas" type="xs:integer" use="required"/>
-                                                                </xs:sequence>
                                                             </xs:complexType>
                                                         </xs:element>
                                                     </xs:sequence>
@@ -74,12 +74,12 @@
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="contenido">
-                                                                    <xs:complextype>
+                                                                    <xs:complexType>
                                                                         <xs:attribute name="enlace" type="xs:string" use="required"/>
-                                                                    </xs:complextype>
+                                                                    </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                           <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
+                                                           <xs:attribute name="id" type="xs:string" use="required"/>
                                                            <xs:attribute name="numeroPaginas" type="xs:integer" use="required"/>
                                                         </xs:complexType>
                                                     </xs:element>
@@ -105,11 +105,11 @@
                                             </xs:restriction>
                                         </xs:simpleType>
                                     </xs:attribute>
-                                   <xs:attribute name="numeroPaginas" type="xs:integer" use="required"></xs:attribute>
+                                   <xs:attribute name="numeroPaginas" type="xs:integer" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="id"></xs:attribute>
+                        <xs:attribute name="id"/>
                     </xs:complexType>
                 </xs:element>
 
@@ -129,12 +129,12 @@
                                                             <xs:sequence>
                                                                 <xs:element name="articulo">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="autor" type="xs:string" use="required"></xs:attribute>
+                                                                        <xs:attribute name="autor" type="xs:string" use="required"/>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                                 <xs:element name="contenido">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="enlace" type="xs:string" use="required"></xs:attribute>
+                                                                        <xs:attribute name="enlace" type="xs:string" use="required"/>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
@@ -152,7 +152,7 @@
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
-                                                <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                <xs:attribute name="id" type="xs:string"/>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -171,11 +171,11 @@
                                             </xs:restriction>
                                         </xs:simpleType>
                                     </xs:attribute>
-                                    <xs:attribute name="fechaPublicacion" type="xs:string" use="required"></xs:attribute>
+                                    <xs:attribute name="fechaPublicacion" type="xs:string" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
