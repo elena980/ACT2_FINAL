@@ -47,7 +47,7 @@
                                                 <xs:element name="seccion">
                                                     <xs:complexType>
                                                         <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
+                                                            <xs:element name="contenido" type="String"></xs:element>
                                                         </xs:sequence>
                                                         <xs:attribute name="id" type="String"></xs:attribute>
                                                         <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
@@ -56,7 +56,7 @@
                                                 <xs:element name="seccion">
                                                     <xs:complexType>
                                                         <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
+                                                            <xs:element name="contenido" type="String"></xs:element>
                                                         </xs:sequence>
                                                         <xs:attribute name="id" type="String"></xs:attribute>
                                                         <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
@@ -65,7 +65,7 @@
                                                 <xs:element name="seccion">
                                                     <xs:complexType>
                                                         <xs:sequence>
-                                                            <xs:element name="contenido" tyupe="String"></xs:element>
+                                                            <xs:element name="contenido" type="String"></xs:element>
                                                         </xs:sequence>
                                                         <xs:attribute name="id" type="String"></xs:attribute>
                                                         <xs:attribute name="numeroPaginas" type="Integer"></xs:attribute>
