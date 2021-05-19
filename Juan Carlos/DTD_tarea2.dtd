@@ -50,9 +50,9 @@
     fechaPublicacion CDATA #REQUIRED
 >
 <!ELEMENT indicePeriodico (#PCDATA)>
-<!ELEMENT seccionesPeriodico (seccionPe+)>
+<!ELEMENT seccionesPeriodico (seccionPeriodico+)>
 <!ATTLIST seccionesPeriodico id CDATA #REQUIRED>
-<!ELEMENT seccionPeriodico (articulo,contenidoPe)>
+<!ELEMENT seccionPeriodico (articulo,contenidoPeriodico)>
 <!ATTLIST seccionPeriodico tipo_seccion CDATA #REQUIRED>
 <!ELEMENT articulo (#PCDATA)>
 <!ATTLIST articulo autor CDATA #REQUIRED>
