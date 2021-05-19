@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+    <element name="biblioteca">
+        <complexType>
+            <sequence>
+
+
+                <element name="libros">
+                    <complexType>
+                        <sequence>
+                            <element name="libro">
+                                <complexType>
+                                    <sequence>
+                                        <element name="titulo" type="string"/>
+                                        <element name="capitulo">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="contenido">
+                                                        <complexType>
+                                                            <attribute name="enlace_info" type="string" use="required"/>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="id" type="integer" use="required"/>
+                                                <attribute name="n_paginas" type="string" use="required"/>
+                                            </complexType>
+                                        </element>
+                                        <element name="indice" type="string" />
+                                        <element name="sinopsis" type="string"/>
+                                    </sequence>
+                                    <attribute name="id" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <pattern value="[L][0-9]{4}"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="tipo_clase" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <enumeration value="novela"/>
+                                                <enumeration value="infantil"/>
+                                                <enumeration value="didactico"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="n_paginas" type="integer" use="required"/>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                    </complexType>
+                </element>
+
+
+                <element name="revistas">
+                    <complexType>
+                        <sequence>
+                            <element name="revista">
+                                <complexType>
+                                    <sequence>
+                                        <element name="titulo" type="string"/>
+                                        <element name="n_revista" type="integer"/>
+                                        <element name="indice" type="string"/>
+                                        <element name="secciones">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="seccion">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="contenido">
+                                                                    <complexType>
+                                                                        <attribute name="enlace_info" type="string" use="required"/>   
+                                                                    </complexType>
+                                                                </element>
+                                                            </sequence>
+                                                            <attribute name="id" type="string" use="required"/>
+                                                            <attribute name="n_pagina" type="integer" use="required"/>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                    <attribute name="id" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <pattern value="[R][0-9]{4}"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="tipo_clase" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <enumeration value="informatica"/>
+                                                <enumeration value="corazon"/>
+                                                <enumeration value="coches"/>
+                                                <enumeration value="investigacion"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="n_paginas" type="integer" use="required"/>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="id" use="required"/>
+                    </complexType>
+                </element>
+
+
+                <element name="periodicos">
+                    <complexType>
+                        <sequence>
+                            <element name="periodico">
+                                <complexType>
+                                    <sequence>
+                                        <element name="nombre" type="string"/>
+                                        <element name="secciones">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="seccion">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="articulo">
+                                                                    <complexType>
+                                                                        <attribute name="autor" type="string" use="required"/>
+                                                                    </complexType>
+                                                                </element>
+                                                            </sequence>
+                                                            <attribute name="tipo_seccion" use="required">
+                                                                <simpleType>
+                                                                    <restriction base="string">
+                                                                        <enumeration value="nacional"/>
+                                                                        <enumeration value="internacional"/>
+                                                                        <enumeration value="economica"/>
+                                                                        <enumeration value="opinion"/>
+                                                                        <enumeration value="deportes"/>
+                                                                    </restriction>
+                                                                </simpleType>
+                                                            </attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                        <element name="contenido">
+                                            <complexType>
+                                                <attribute name="enlace_info" type="string" use="required"/>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                    <attribute name="id" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <pattern value="[P][0-9]{4}"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="tipo_clase" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <enumeration value="nacional"/>
+                                                <enumeration value="internacional"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                    <attribute name="fecha_publicacion" type="string" use="required"/>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>    

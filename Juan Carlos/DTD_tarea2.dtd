@@ -1,0 +1,61 @@
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+
+
+<!ELEMENT libros (libro+)>
+<!ATTLIST libros id CDATA #REQUIRED>
+<!ELEMENT libro (titulo, indice, sinopsis, capitulo+)>
+<!ATTLIST libro
+    tipo_clase CDATA #REQUIRED
+    numeroPaginas CDATA #REQUIRED
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT capitulo (titulo, contenido)>
+<!ATTLIST capitulo
+    id CDATA #REQUIRED
+    numeroPaginas CDATA #REQUIRED
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
+
+
+<!ELEMENT revistas (revista+)>
+<!ATTLIST revistas id CDATA #REQUIRED>
+<!ELEMENT revista (tituloRevista, numeroRevista, indices, secciones)>
+<!ATTLIST revista
+    tipo_clase CDATA #REQUIRED
+    numeroPaginas CDATA #REQUIRED
+>
+<!ELEMENT tituloRevista (#PCDATA)>
+<!ELEMENT numeroRevista (#PCDATA)>
+<!ELEMENT indices (#PCDATA)>
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT seccion (contenidoRevistas)>
+<!ATTLIST seccion
+    id CDATA #REQUIRED
+    numeroPagina CDATA #REQUIRED
+>
+<!ELEMENT contenidoRevistas (#PCDATA)>
+<!ATTLIST contenidoRevistas enlace CDATA #REQUIRED>
+
+
+<!ELEMENT periodicos (periodico+)>
+<!ATTLIST periodicos id CDATA #REQUIRED>
+<!ELEMENT periodico (indicePeriodico, seccionesPeriodico)>
+<!ATTLIST periodico
+    tipo_clase CDATA #REQUIRED
+    fechaPublicacion CDATA #REQUIRED
+>
+<!ELEMENT indicePeriodico (#PCDATA)>
+<!ELEMENT seccionesPeriodico (seccionPeriodico+)>
+<!ATTLIST seccionesPeriodico id CDATA #REQUIRED>
+<!ELEMENT seccionPeriodico (articulo,contenidoPeriodico)>
+<!ATTLIST seccionPeriodico tipo_seccion CDATA #REQUIRED>
+<!ELEMENT articulo (#PCDATA)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+<!ELEMENT contenidoPeriodico (#PCDATA)>
+<!ATTLIST contenidoPeriodico enlace CDATA #REQUIRED>
+]
