@@ -141,7 +141,7 @@
             </secciones>
         </periodico>
 
-        <periodico tipo_clase="P_int" fechaPublicacion="13 de mayo de 2021">
+        <periodico tipo_clase="P_int" fecha_publicacion="13 de mayo de 2021">
             <indice> 10 secciones </indice>
             <secciones id="secciones">
                 <seccion tipo_seccion="nacional">
